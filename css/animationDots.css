@@ -1,0 +1,273 @@
+@keyframes vertical {
+    0%{
+        left: 330px;
+    }
+    50%{
+        top: 40px;
+        height: 5px;
+    }
+    100%{
+        top: 0;
+        height: 80px;
+    }
+}
+@keyframes horizontal-A1 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        left: 60px;
+        width: 5px;
+    }
+    100%{
+        left: 40px;
+        width: 40px;
+    }
+}
+@keyframes horizontal-A2 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        left: 340px;
+        width: 5px;
+    }
+    100%{
+        left: 320px;
+        width: 40px;
+    }
+}
+@keyframes horizontal-T {
+    0%{
+        left: 330px;
+    }
+    50%{
+        left: 440px;
+        top: 40px;
+        width: 5px;
+    }
+    100%{
+        left: 400px;
+        top: 0;
+        width: 80px;
+    }
+}
+@keyframes horizontal-O1 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        left: 580px;
+        top: 40px;
+        width: 5px;
+    }
+    100%{
+        left: 560px;
+        top: 0;
+        width: 40px;
+    }
+}
+@keyframes horizontal-O2 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        left: 580px;
+        top: 40px;
+        width: 5px;
+    }
+    100%{
+        left: 560px;
+        top: 75px;
+        width: 40px;
+    }
+}
+@keyframes diagonal-A1 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        top: 40px;
+        transform:rotate(0);
+        height: 5px;
+    }
+    100%{
+        top: -15px;
+        transform:rotate(45deg);
+        height: 113px;
+    }
+}
+@keyframes diagonal-A2 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        top: 40px;
+        transform:rotate(0);
+        height: 5px;
+    }
+    100%{
+        top: -15px;
+        transform:rotate(-45deg);
+        height: 113px;
+    }
+}
+@keyframes diagonal-N {
+    0%{
+        left: 330px;
+    }
+    50%{
+        top: 40px;
+        transform:rotate(0);
+        height: 5px;
+    }
+    100%{
+        top: -5px;
+        transform:rotate(-26deg);
+        height: 89px;
+    }
+}
+@keyframes diagonal-M1 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        top: 40px;
+        left: 260px;
+        transform:rotate(0);
+        height: 5px;
+    }
+    100%{
+        top: 0;
+        left: 250px;
+        transform:rotate(-26deg);
+        height: 46px;
+    }
+}
+@keyframes diagonal-M2 {
+    0%{
+        left: 330px;
+    }
+    50%{
+        top: 40px;
+        left: 260px;
+        transform:rotate(0);
+        height: 5px;
+    }
+    100%{
+        top: 0;
+        left: 270px;
+        transform: rotate(26deg);
+        height: 46px;
+    }
+}
+.animationDots {
+    position: relative;
+    height: 120px;
+    width: 700px;
+}
+.animationDots span{
+    position: absolute;
+    margin: 20px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2px;
+    top: 40px;
+}
+#a1-1{
+    left: 40px;
+    animation: diagonal-A1 3s  infinite alternate;
+}
+#a1-2{
+    left: 60px;
+    animation: horizontal-A1 3s  infinite alternate;
+}
+#a1-3{
+    left: 80px;
+    animation: vertical 3s  infinite alternate;
+}
+#n1-1{
+    left: 120px;
+    animation: vertical 3s  infinite alternate;
+}
+#n1-2{
+    left: 140px;
+    animation: diagonal-N 3s  infinite alternate;
+}
+#n1-3{
+    left: 160px;
+    animation: vertical 3s  infinite alternate;
+}
+#i1{
+    left: 200px;
+    animation: vertical 3s  infinite alternate;
+}
+#m-1{
+    left: 240px;
+    animation: vertical 3s  infinite alternate;
+}
+#m-2{
+    left: 260px;
+    animation: diagonal-M1 3s  infinite alternate;
+}
+#m-3{
+    left: 260px;
+    animation: diagonal-M2 3s  infinite alternate;
+}
+#m-4{
+    left: 280px;
+    animation: vertical 3s  infinite alternate;
+}
+#a2-1{
+    left: 320px;
+    animation: vertical 3s  infinite alternate;
+}
+#a2-2{
+    left: 340px;
+    animation: horizontal-A2 3s  infinite alternate;
+}
+#a2-3{
+    left: 360px;
+    animation: diagonal-A2 3s  infinite alternate;
+}
+#t-1{
+    left: 440px;
+    animation: vertical 3s  infinite alternate;
+}
+#t-2{
+    left: 440px;
+    animation: horizontal-T 3s  infinite alternate;
+}
+#i2{
+    left: 520px;
+    animation: vertical 3s  infinite alternate;
+}
+#o-1{
+    left: 560px;
+    animation: vertical 3s  infinite alternate;
+}
+#o-2{
+    left: 580px;
+    animation: horizontal-O1 3s  infinite alternate;
+}
+#o-3{
+    left: 580px;
+    animation: horizontal-O2 3s  infinite alternate;
+}
+#o-4{
+    left: 600px;
+    animation: vertical 3s  infinite alternate;
+}
+#n2-1{
+    left: 640px;
+    animation: vertical 3s  infinite alternate;
+}
+#n2-2{
+    left: 660px;
+    animation: diagonal-N 3s  infinite alternate;
+}
+#n2-3{
+    left: 680px;
+    animation: vertical 3s  infinite alternate;
+}

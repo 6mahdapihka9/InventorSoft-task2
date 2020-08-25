@@ -1,0 +1,24 @@
+main {
+  background: linear-gradient(#020024 0%, #00d4ff 100%);
+}
+main h2 {
+  color: #f3ff9e;
+}
+
+footer {
+  background: linear-gradient(#020024 0%, black 100%);
+}
+
+header a, header p, footer a, footer p {
+  color: #f3ff9e;
+}
+
+.burgerMenu span {
+  background-color: #f3ff9e;
+}
+
+#social-media {
+  background-color: black;
+}
+
+/*# sourceMappingURL=colors.css.map */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/headerStyles.css">
+        <link rel="stylesheet" href="css/mainStyles.css">
+        <link rel="stylesheet" href="css/footerStyles.css">
+        <link rel="stylesheet" href="sass-scss/css/burgerMenuAnimation.css">
+        <link rel="stylesheet" href="css/animationLoadBar.css">
+        <link rel="stylesheet" href="css/animationDots.css">
+        <link rel="stylesheet" href="sass-scss/css/colors.css">
+        <link rel="stylesheet" href="sass-scss/css/variables.css">
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="top"></div>
+        <header>
+
+            <div class="burgerMenu" onclick="openBurger()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="social-media">
+                <a><img src="img/youtube.png" alt="youtube">YouTube</a>
+                <a><img src="img/facebook.png" alt="youtube">FaceBook</a>
+                <a><img src="img/vk.png" alt="youtube">VK</a>
+                <a><img src="img/twitter.png" alt="youtube">Twitter</a>
+                <a><img src="img/tumblr.png" alt="youtube">Tumblr</a>
+            </div>
+            <script src="script.js"></script>
+            <ul class="headerSection">
+                <li><a href="#top">On Top</a></li>
+                <li><a href="#animationBox">Animations</a></li>
+                <li><a href="#flexBox">Flex Box</a></li>
+                <li><a href="#gridBox">Grid Box</a></li>
+                <li><a href="#formBox">Form</a></li>
+            </ul>
+        </header>
+        <aside>
+        </aside>
+        <main>
+            <div>
+                <h2>Animations</h2>
+                <div id="animationBox" class="content animationBox">
+
+                    <div class="testAnimation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="animationDots">
+                        <span id="a1-1"></span>
+                        <span id="a1-2"></span>
+                        <span id="a1-3"></span>
+                        <span id="n1-1"></span>
+                        <span id="n1-2"></span>
+                        <span id="n1-3"></span>
+                        <span id="i1"></span>
+                        <span id="m-1"></span>
+                        <span id="m-2"></span>
+                        <span id="m-3"></span>
+                        <span id="m-4"></span>
+                        <span id="a2-1"></span>
+                        <span id="a2-2"></span>
+                        <span id="a2-3"></span>
+                        <span id="t-1"></span>
+                        <span id="t-2"></span>
+                        <span id="i2"></span>
+                        <span id="o-1"></span>
+                        <span id="o-2"></span>
+                        <span id="o-3"></span>
+                        <span id="o-4"></span>
+                        <span id="n2-1"></span>
+                        <span id="n2-2"></span>
+                        <span id="n2-3"></span>
+                    </div>
+                    <p id="not_enough" style="display: none">Not enough space for this animation</p>
+                </div>
+                <h2>Flex Box</h2>
+                <div id="flexBox" class="content flexBox" title="display: flex;">
+                    <div class="colon" title="flex-direction: column;">
+                        <img src="img/1.png" alt="elephant">
+                        <img src="img/2.png" alt="kangaroo">
+                        <img src="img/3.png" alt="lion">
+                    </div>
+                    <div class="row" title="flex-direction: row;">
+                        <img src="img/4.png" alt="medusa">
+                        <img src="img/5.png" alt="shell">
+                        <img src="img/6.png" alt="dolphin">
+                    </div>
+                    <div class="row-reverse" title="flex-direction: row-reverse;">
+                        <img src="img/4.png" alt="medusa">
+                        <img src="img/5.png" alt="shell">
+                        <img src="img/6.png" alt="dolphin">
+                    </div>
+                    <div class="self-align">
+                        <img src="img/7.png" alt="fish" title="align-self: flex-start;">
+                        <img src="img/8.png" alt="jaguar" title="align-self: center;">
+                        <img src="img/9.png" alt="cock" title="align-self: flex-end;">
+                    </div>
+                </div>
+                <h2>Grid Box</h2>
+                <div id="gridBox" class="content gridBox">
+
+                </div>
+                <h2>Form</h2>
+                <div id="formBox" class="content formBox">
+                    <h3>Registration</h3>
+                    <form action="#">
+                        <input name="login" type="text" placeholder="Enter login" required>
+                        <input name="password1" type="password" placeholder="Enter password" required>
+                        <input name="password2" type="password" placeholder="Enter password again" required>
+                        <input name="email" type="email" placeholder="Enter email" required>
+                        <input type="submit" name="Submit">
+                    </form>
+                    <img src="img/user.png" alt="user">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© Baal x Zul'Jin x Aleksandr Kulesh</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+main{
+    padding: 100px 200px 100px 200px;
+    min-height: 100%;
+    text-align: center;
+}
+main img{
+    margin: 30px;
+    width: 200px;
+    border: 2px solid deepskyblue;
+}
+.animationBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.content{
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid #282828;
+}
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flexBox div{
+    margin: 10px;
+    border: 1px solid black;
+}
+.colon{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.row-reverse{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.self-align{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.self-align img:first-child {
+    align-self: flex-start;
+}
+.self-align img:nth-child(2){
+    align-self: center;
+}
+.self-align img:last-child {
+    align-self: flex-end;
+}
+.formBox {
+    position: relative;
+}
+.formBox img{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+form{
+    margin: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 50px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}

@@ -1,0 +1,41 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+h2, h3 {
+    margin: 15px;
+}
+@media (min-width: 1240px) {
+    .animationDots{
+        display: block;
+    }
+    #not_enough{
+        display: none;
+    }
+    .self-align{
+        height: 300px;
+    }
+    main {
+        padding: 100px 200px 100px 200px;
+    }
+}
+@media (max-width: 1239px) {
+    .animationDots{
+        display: none!important;
+    }
+    #not_enough{
+        display: block!important;
+    }
+    .self-align{
+        height: 630px!important;
+    }
+    main{
+        padding: 20px!important;
+    }
+}
