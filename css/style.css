@@ -11,6 +11,9 @@ li a{
 h2, h3 {
     margin: 15px;
 }
+a:hover{
+    cursor: pointer;
+}
 @media (min-width: 1240px) {
     .animationDots{
         display: block;

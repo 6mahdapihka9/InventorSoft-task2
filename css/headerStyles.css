@@ -8,8 +8,7 @@ header{
     align-items: center;
     z-index: 2;
 }
-
-#social-media{
+.social-media{
     position: absolute;
     height: 300px;
     width: 0;
@@ -20,21 +19,26 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 1s;
 }
-#social-media a{
+.social-media a{
     display: flex;
     align-items: center;
+}
+.social-media-opened{
+    width: 200px;
+    visibility: visible;
+    transition: width 1s, visibility 1s;
 }
 a img{
     margin: 15px;
     width: 30px;
 }
-
 header ul{
     margin: 0;
     padding: 0;
     display: flex;
-    width: 100%;
+    width: 70%;
 }
 header li{
     display: flex;

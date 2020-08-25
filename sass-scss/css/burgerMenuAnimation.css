@@ -1,22 +1,7 @@
-@keyframes burgerUpper {
-  100% {
-    top: 25px;
-    transform: rotate(45deg);
-  }
-}
-@keyframes burgerMiddle {
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes burgerLower {
-  100% {
-    top: 25px;
-    transform: rotate(-45deg);
-  }
-}
 .burgerMenu {
-  position: relative;
+  position: absolute;
+  top: 5px;
+  left: 0;
   z-index: 2;
   width: 50px;
   height: 50px;
@@ -26,6 +11,7 @@
   left: 10px;
   width: 40px;
   height: 5px;
+  transition: all 1s;
 }
 .burgerMenu span:first-child {
   top: 10px;
@@ -42,20 +28,23 @@
   top: 35px;
 }
 
-.burgerMenu:hover span:first-child {
-  animation: burgerUpper 1s forwards;
+.burgerMenu-opened span:first-child {
+  transform: rotate(45deg);
+  top: 25px;
+  transition: top 1s, transform 1s;
 }
-.burgerMenu:hover span:nth-child(2) {
-  animation: burgerMiddle 1s forwards;
+.burgerMenu-opened span:nth-child(2) {
+  opacity: 0;
+  transition: opacity 1s;
 }
-.burgerMenu:hover span:nth-child(3) {
-  animation: burgerMiddle 1s forwards;
+.burgerMenu-opened span:nth-child(3) {
+  opacity: 0;
+  transition: opacity 1s;
 }
-.burgerMenu:hover span:last-child {
-  animation: burgerLower 1s forwards;
-}
-.burgerMenu:hover .social-media {
-  width: 100%;
+.burgerMenu-opened span:last-child {
+  transform: rotate(-45deg);
+  top: 25px;
+  transition: top 1s, transform 1s;
 }
 
 /*# sourceMappingURL=burgerMenuAnimation.css.map */

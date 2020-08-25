@@ -1,14 +1,15 @@
 let opened = false;
 
 function openBurger() {
-    let burgerMenu = document.getElementById("social-media");
+    let socialMedia = document.getElementById("social-media");
+    let burgerMenu = document.getElementById("burgerMenu");
+
     if (opened) {
-        burgerMenu.style.width = "0px";
-        burgerMenu.style.visibility = "hidden";
-        opened = !opened;
+        socialMedia.classList.remove("social-media-opened");
+        burgerMenu.classList.remove("burgerMenu-opened");
     } else {
-        burgerMenu.style.width = "200px";
-        burgerMenu.style.visibility = "visible";
-        opened = !opened;
+        socialMedia.classList.add("social-media-opened");
+        burgerMenu.classList.add("burgerMenu-opened");
     }
+    opened = !opened;
 }

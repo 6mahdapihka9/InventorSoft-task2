@@ -21,4 +21,8 @@ header a, header p, footer a, footer p {
   background-color: black;
 }
 
+[type=submit] {
+  background-color: #00d4ff;
+}
+
 /*# sourceMappingURL=colors.css.map */
