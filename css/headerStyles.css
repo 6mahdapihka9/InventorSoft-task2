@@ -14,8 +14,8 @@ header{
     width: 0;
     visibility: hidden;
     top: 50px;
-    left: 0;
-    z-index: 1;
+    left: -200px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,9 +26,10 @@ header{
     align-items: center;
 }
 .social-media-opened{
+    left: 0;
     width: 200px;
     visibility: visible;
-    transition: width 1s, visibility 1s;
+    transition: width 1s, visibility 1s, left 1s;
 }
 a img{
     margin: 15px;
@@ -39,9 +40,11 @@ header ul{
     padding: 0;
     display: flex;
     width: 70%;
+    flex-wrap: wrap;
 }
 header li{
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
+    width: 160px;
 }

@@ -1,16 +1,17 @@
 main {
-  background: linear-gradient(#020024 0%, #00d4ff 100%);
+  background: linear-gradient(#02004e 0%, #00d4ff 100%);
 }
 main h2 {
   color: #f3ff9e;
 }
 
 footer {
-  background: linear-gradient(#020024 0%, black 100%);
+  background: linear-gradient(#02004e 0%, black 100%);
 }
 
 header a, header p, footer a, footer p {
   color: #f3ff9e;
+  text-decoration: none;
 }
 
 .burgerMenu span {
@@ -23,6 +24,10 @@ header a, header p, footer a, footer p {
 
 [type=submit] {
   background-color: #00d4ff;
+}
+
+header ul li a::before, header ul li a:hover::before, header ul li a::after, header ul li a:hover::after, header .social-media a::before, header .social-media a:hover::before, header .social-media a::after, header .social-media a:hover::after {
+  background-color: #f3ff9e;
 }
 
 /*# sourceMappingURL=colors.css.map */

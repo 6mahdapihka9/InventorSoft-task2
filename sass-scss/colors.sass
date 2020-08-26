@@ -1,7 +1,7 @@
 $contentColor: #f3ff9e
 
 $linerGradLight: rgba(0,212,255,1)
-$linerGradDark: rgba(2,0,36,1)
+$linerGradDark: rgb(2, 0, 78)
 $linerGradBlack: rgba(0,0,0,1)
 
 main
@@ -15,6 +15,7 @@ footer
 header, footer
   a, p
     color: $contentColor
+    text-decoration: none
 
 
 .burgerMenu span
@@ -25,3 +26,8 @@ header, footer
 
 [type="submit"]
   background-color: $linerGradLight
+
+header
+  ul li, .social-media
+    a::before, a:hover::before, a::after, a:hover::after
+      background-color: $contentColor

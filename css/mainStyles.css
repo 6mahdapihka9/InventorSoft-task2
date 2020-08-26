@@ -60,6 +60,8 @@ main img{
 .self-align img:last-child {
     align-self: flex-end;
 }
+
+
 .formBox {
     position: relative;
 }

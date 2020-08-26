@@ -47,4 +47,44 @@
   transition: top 1s, transform 1s;
 }
 
+header ul li a::before, header ul li a:hover::before, header ul li a::after, header ul li a:hover::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  transition: all 1s;
+}
+header .social-media a::before, header .social-media a:hover::before, header .social-media a::after, header .social-media a:hover::after {
+  content: "";
+  position: relative;
+  display: block !important;
+  height: 1px;
+  transition: width 1s, transform 1s;
+}
+
+header ul li a::before, header ul li a:hover::before {
+  top: -5px;
+}
+header ul li a::after, header ul li a:hover::after {
+  top: 5px;
+}
+header ul li a::before, header ul li a::after {
+  transform: scaleX(0);
+}
+header ul li a:hover::before, header ul li a:hover::after {
+  transform: scaleX(1) !important;
+}
+
+.social-media a::after {
+  margin-left: 15px;
+}
+.social-media a::before, .social-media a::after {
+  width: 0;
+  transform: scaleX(0);
+}
+.social-media a:hover::before, .social-media a:hover::after {
+  width: 100%;
+  transform: scaleX(1) !important;
+}
+
 /*# sourceMappingURL=burgerMenuAnimation.css.map */

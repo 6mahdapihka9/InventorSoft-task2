@@ -37,3 +37,43 @@
     transform: rotate(-45deg)
     top: 25px
     transition: top 1s, transform 1s
+
+
+
+header
+  ul li
+    a::before, a:hover::before, a::after, a:hover::after
+      content: ''
+      position: relative
+      display: block
+      height: 1px
+      transition: all 1s
+  .social-media
+    a::before, a:hover::before, a::after, a:hover::after
+      content: ''
+      position: relative
+      display: block!important
+      height: 1px
+      transition: width 1s, transform 1s
+
+header
+  ul li
+    a::before ,a:hover::before
+      top: -5px
+    a::after, a:hover::after
+      top: 5px
+    a::before, a::after
+      transform: scaleX(0)
+    a:hover::before, a:hover::after
+      transform: scaleX(1)!important
+
+.social-media
+  a::after
+    margin-left: 15px
+  a::before, a::after
+    width: 0
+    transform: scaleX(0)
+  a:hover::before, a:hover::after
+    width: 100%
+    transform: scaleX(1)!important
+
