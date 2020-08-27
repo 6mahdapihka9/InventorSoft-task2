@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/headerStyles.css">
         <link rel="stylesheet" href="css/mainStyles.css">
+        <link rel="stylesheet" href="css/flexStyles.css">
+        <link rel="stylesheet" href="css/gridStyles.css">
         <link rel="stylesheet" href="css/footerStyles.css">
         <link rel="stylesheet" href="sass-scss/css/burgerMenuAnimation.css">
         <link rel="stylesheet" href="css/animationLoadBar.css">
@@ -43,87 +45,134 @@
         <aside>
         </aside>
         <main>
-            <div>
-                <h2 id="animationBox">Animations</h2>
-                <div class="content animationBox">
+            <h2 id="animationBox">Animations</h2>
+            <div class="content animationBox">
 
-                    <div class="testAnimation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="animationDots">
-                        <span id="a1-1"></span>
-                        <span id="a1-2"></span>
-                        <span id="a1-3"></span>
-                        <span id="n1-1"></span>
-                        <span id="n1-2"></span>
-                        <span id="n1-3"></span>
-                        <span id="i1"></span>
-                        <span id="m-1"></span>
-                        <span id="m-2"></span>
-                        <span id="m-3"></span>
-                        <span id="m-4"></span>
-                        <span id="a2-1"></span>
-                        <span id="a2-2"></span>
-                        <span id="a2-3"></span>
-                        <span id="t-1"></span>
-                        <span id="t-2"></span>
-                        <span id="i2"></span>
-                        <span id="o-1"></span>
-                        <span id="o-2"></span>
-                        <span id="o-3"></span>
-                        <span id="o-4"></span>
-                        <span id="n2-1"></span>
-                        <span id="n2-2"></span>
-                        <span id="n2-3"></span>
-                    </div>
-                    <p id="not_enough" style="display: none">Not enough space for this animation</p>
+                <div class="testAnimation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <h2 id="flexBox">Flex Box</h2>
-                <div class="content flexBox" title="display: flex;">
-                    <div class="colon" title="flex-direction: column;">
-                        <img src="img/1.png" alt="elephant">
-                        <img src="img/2.png" alt="kangaroo">
-                        <img src="img/3.png" alt="lion">
-                    </div>
-                    <div class="row" title="flex-direction: row;">
-                        <img src="img/4.png" alt="medusa">
-                        <img src="img/5.png" alt="shell">
-                        <img src="img/6.png" alt="dolphin">
-                    </div>
-                    <div class="row-reverse" title="flex-direction: row-reverse;">
-                        <img src="img/4.png" alt="medusa">
-                        <img src="img/5.png" alt="shell">
-                        <img src="img/6.png" alt="dolphin">
-                    </div>
-                    <div class="self-align">
-                        <img src="img/7.png" alt="fish" title="align-self: flex-start;">
-                        <img src="img/8.png" alt="jaguar" title="align-self: center;">
-                        <img src="img/9.png" alt="cock" title="align-self: flex-end;">
-                    </div>
+                <div class="animationDots">
+                    <span id="a1-1"></span>
+                    <span id="a1-2"></span>
+                    <span id="a1-3"></span>
+                    <span id="n1-1"></span>
+                    <span id="n1-2"></span>
+                    <span id="n1-3"></span>
+                    <span id="i1"></span>
+                    <span id="m-1"></span>
+                    <span id="m-2"></span>
+                    <span id="m-3"></span>
+                    <span id="m-4"></span>
+                    <span id="a2-1"></span>
+                    <span id="a2-2"></span>
+                    <span id="a2-3"></span>
+                    <span id="t-1"></span>
+                    <span id="t-2"></span>
+                    <span id="i2"></span>
+                    <span id="o-1"></span>
+                    <span id="o-2"></span>
+                    <span id="o-3"></span>
+                    <span id="o-4"></span>
+                    <span id="n2-1"></span>
+                    <span id="n2-2"></span>
+                    <span id="n2-3"></span>
                 </div>
-                <h2 id="gridBox">Grid Box</h2>
-                <div class="content gridBox" title="display:grid;">
-                    <div class="">
+                <p class="not_enough" style="display: none">Not enough space for this animation</p>
+            </div>
+            <h2 id="flexBox">Flex Box</h2>
+            <div class="content flexBox" title="display: flex;">
+                <div class="colon" title="flex-direction: column;">
+                    <img src="img/1.png" alt="elephant">
+                    <img src="img/2.png" alt="kangaroo">
+                    <img src="img/3.png" alt="lion">
+                </div>
+                <div class="colon-reverse" title="flex-direction: column-reverse;">
+                    <img src="img/1.png" alt="elephant">
+                    <img src="img/2.png" alt="kangaroo">
+                    <img src="img/3.png" alt="lion">
+                </div>
+                <div class="row" title="flex-direction: row;">
+                    <img src="img/4.png" alt="medusa">
+                    <img src="img/5.png" alt="shell">
+                    <img src="img/6.png" alt="dolphin">
+                </div>
+                <div class="row-reverse" title="flex-direction: row-reverse;">
+                    <img src="img/4.png" alt="medusa">
+                    <img src="img/5.png" alt="shell">
+                    <img src="img/6.png" alt="dolphin">
+                </div>
+                <div class="self-align">
+                    <img src="img/7.png" alt="fish" title="align-self: flex-start;">
+                    <img src="img/8.png" alt="jaguar" title="align-self: center;">
+                    <img src="img/9.png" alt="cock" title="align-self: flex-end;">
+                </div>
+            </div>
+            <h2 id="gridBox">Grid Box</h2>
+            <div class="content gridBox" title="display:grid;">
+                <div class="grid-word">
+                    <div class="box item-g1" title="grid area G1"></div>
+                    <div class="box item-g2" title="grid area G2"></div>
+                    <div class="box item-g3" title="grid area G3"></div>
+                    <div class="box item-g4" title="grid area G4"></div>
+                    <div class="box item-g5" title="grid area G5"></div>
 
-                    </div>
+                    <div class="box item-r1" title="grid area R1"></div>
+                    <div class="box item-r2" title="grid area R2"></div>
+                    <div class="box item-r3" title="grid area R3"></div>
+                    <div class="box item-r4" title="grid area R4"></div>
+                    <div class="box item-r5" title="grid area R5"></div>
+                    <div class="box item-r6" title="grid area R6"></div>
+                    <div class="box item-r7" title="grid area R7"></div>
+
+                    <div class="box item-i1" title="grid area I1"></div>
+                    <div class="box item-i2" title="grid area I2"></div>
+                    <div class="box item-i3" title="grid area I3"></div>
+
+                    <div class="box item-d1" title="grid area D1"></div>
+                    <div class="box item-d2" title="grid area D2"></div>
+                    <div class="box item-d3" title="grid area D3"></div>
+                    <div class="box item-d4" title="grid area D4"></div>
                 </div>
-                <h2 id="formBox">Form</h2>
-                <div class="content formBox">
-                    <h3>Registration</h3>
-                    <form action="#">
-                        <input name="login" type="text" placeholder="Enter login" required>
-                        <input name="password1" type="password" placeholder="Enter password" required>
-                        <input name="password2" type="password" placeholder="Enter password again" required>
-                        <input name="email" type="email" placeholder="Enter email" required>
-                        <input type="submit" name="Submit">
-                    </form>
-                    <img src="img/user.png" alt="user">
+                <div class="box-word">
+                    <div class="box item-b1" title="grid area B1"></div>
+                    <div class="box item-b2" title="grid area B2"></div>
+                    <div class="box item-b3" title="grid area B3"></div>
+                    <div class="box item-b4" title="grid area B4"></div>
+                    <div class="box item-b5" title="grid area B5"></div>
+                    <div class="box item-b6" title="grid area B6"></div>
+
+                    <div class="box item-o1" title="grid area O1"></div>
+                    <div class="box item-o2" title="grid area O2"></div>
+                    <div class="box item-o3" title="grid area O3"></div>
+                    <div class="box item-o4" title="grid area O4"></div>
+
+                    <div class="box item-x1" title="grid area X1"></div>
+                    <div class="box item-x2" title="grid area X2"></div>
+                    <div class="box item-x3" title="grid area X3"></div>
+                    <div class="box item-x4" title="grid area X4"></div>
+                    <div class="box item-x5" title="grid area X5"></div>
+                    <div class="box item-x6" title="grid area X6"></div>
+                    <div class="box item-x7" title="grid area X7"></div>
+                    <div class="box item-x8" title="grid area X8"></div>
+                    <div class="box item-x9" title="grid area X9"></div>
                 </div>
+            </div>
+            <h2 id="formBox">Form</h2>
+            <div class="content formBox">
+                <h3>Registration</h3>
+                <form action="#">
+                    <input name="login" type="text" placeholder="Enter login" required>
+                    <input name="password1" type="password" placeholder="Enter password" required>
+                    <input name="password2" type="password" placeholder="Enter password again" required>
+                    <input name="email" type="email" placeholder="Enter email" required>
+                    <input type="submit" name="Submit">
+                </form>
+                <img src="img/user.png" alt="user">
             </div>
         </main>
         <footer>

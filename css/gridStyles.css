@@ -1,0 +1,161 @@
+.gridBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 40px 1fr;
+    grid-template-areas:
+            ". grid ."
+            ". .    ."
+            ". box  .";
+}
+.grid-word {
+    grid-area: grid;
+    display: grid;
+    grid-gap: 0;
+    grid-template: repeat(7, 20px) / repeat(18, 20px);
+    grid-template-areas:
+            ".  g1 g1 g1 . r1 r4 r4 .  . i1 i1 i1 . d1 d2 d2 . "
+            "g2 .  .  .  . r1 .  .  r3 . .  i2 .  . d1 .  .  d3"
+            "g2 .  .  .  . r1 .  .  r3 . .  i2 .  . d1 .  .  d3"
+            "g2 .  g5 g4 . r1 r2 r2 r3 . .  i2 .  . d1 .  .  d3"
+            "g2 .  .  g4 . r1 r5 .  .  . .  i2 .  . d1 .  .  d3"
+            "g2 .  .  g4 . r1 .  r6 .  . .  i2 .  . d1 .  .  d3"
+            ".  g3 g3 g4 . r1 .  .  r7 . i3 i3 i3 . d1 d4 d4 . ";
+}
+.box-word{
+    grid-area: box;
+    display: grid;
+    grid-gap: 0;
+    grid-template: repeat(7, 20px) / repeat(15, 20px);
+    grid-template-areas:
+        "b1 b6 b6 .  . .  o1 o1 .  . x1 .  .  .  x2"
+        "b1 .  b5 .  . o2 .  .  o4 . x1 .  .  .  x2"
+        "b1 .  b5 .  . o2 .  .  o4 . .  x3 .  x4 . "
+        "b1 b4 b4 b4 . o2 .  .  o4 . .  .  x5 .  . "
+        "b1 .  .  b3 . o2 .  .  o4 . .  x6 .  x7 . "
+        "b1 .  .  b3 . o2 .  .  o4 . x8 .  .  .  x9"
+        "b1 b2 b2 .  . .  o3 o3 .  . x8 .  .  .  x9";
+}
+.box {
+    background: #02004E;
+}
+.item-g1 {
+    grid-area: g1;
+}
+.item-g2 {
+    grid-area: g2;
+}
+.item-g3 {
+    grid-area: g3;
+}
+.item-g4 {
+    grid-area: g4;
+}
+.item-g5 {
+    grid-area: g5;
+}
+
+.item-r1 {
+    grid-area: r1;
+}
+.item-r2 {
+    grid-area: r2;
+}
+.item-r3 {
+    grid-area: r3;
+}
+.item-r4 {
+    grid-area: r4;
+}
+.item-r5 {
+    grid-area: r5;
+}
+.item-r6 {
+    grid-area: r6;
+}
+.item-r7 {
+    grid-area: r7;
+}
+
+.item-i1 {
+    grid-area: i1;
+}
+.item-i2 {
+    grid-area: i2;
+}
+.item-i3 {
+    grid-area: i3;
+}
+
+.item-d1 {
+    grid-area: d1;
+}
+.item-d2 {
+    grid-area: d2;
+}
+.item-d3 {
+    grid-area: d3;
+}
+.item-d4 {
+    grid-area: d4;
+}
+
+
+.item-b1 {
+    grid-area: b1;
+}
+.item-b2 {
+    grid-area: b2;
+}
+.item-b3 {
+    grid-area: b3;
+}
+.item-b4 {
+    grid-area: b4;
+}
+.item-b5 {
+    grid-area: b5;
+}
+.item-b6 {
+    grid-area: b6;
+}
+
+.item-o1 {
+    grid-area: o1;
+}
+.item-o2 {
+    grid-area: o2;
+}
+.item-o3 {
+    grid-area: o3;
+}
+.item-o4 {
+    grid-area: o4;
+}
+
+.item-x1 {
+    grid-area: x1;
+}
+.item-x2 {
+    grid-area: x2;
+}
+.item-x3 {
+    grid-area: x3;
+}
+.item-x4 {
+    grid-area: x4;
+}
+.item-x5 {
+    grid-area: x5;
+}
+.item-x6 {
+    grid-area: x6;
+}
+.item-x7 {
+    grid-area: x7;
+}
+.item-x8 {
+    grid-area: x8;
+}
+.item-x9 {
+    grid-area: x9;
+}

@@ -1,0 +1,43 @@
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flexBox div{
+    margin: 10px;
+    border: 1px solid black;
+}
+.colon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.colon-reverse{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.row-reverse{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.self-align{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.self-align img:first-child {
+    align-self: flex-start;
+}
+.self-align img:nth-child(2){
+    align-self: center;
+}
+.self-align img:last-child {
+    align-self: flex-end;
+}

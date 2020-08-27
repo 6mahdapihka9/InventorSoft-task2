@@ -18,7 +18,7 @@ a:hover{
     .animationDots{
         display: block;
     }
-    #not_enough{
+    .not_enough{
         display: none;
     }
     .self-align{
@@ -35,7 +35,7 @@ a:hover{
     .animationDots{
         display: none!important;
     }
-    #not_enough{
+    .not_enough{
         display: block!important;
     }
     .self-align{
